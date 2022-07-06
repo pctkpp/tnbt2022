@@ -7,13 +7,12 @@
         
         <!-- Custom css -->
         <link rel="stylesheet" href="css/style.css" />
-        <!-- Custom js -->
-        <script src="js/script.js" defer></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
     </head>
     <body>
         <div class="background">
-            <div id="road">
-            </div>
+            <img src="/assets/NBG.png" class="nbg">
             <div class="title">
                 <h1>Tanabata</h1>
                 <h2>@KVIS - 7/7/2022</h2>
@@ -30,31 +29,31 @@
                 </div>
 
                 <div class="makewish">
-                    <form class="form" id="form">
+                    <form action="" id="form">
                         <h2>Make a wish</h2>
                         <div>
-                            <input type="text" name="name" id="name" placeholder="Your name (Optional)">
+                            <input type="text" id="name" placeholder="Your name (Optional)">
                         </div>
                         <div>
-                            <input type="text" name="wish" id="wish" placeholder="Your wish">
+                            <input type="text" id="wish" placeholder="Your wish">
                         </div>
                         <div class="tanzaku">
                             <p style="margin-top: 0; margin-bottom: 10px; padding-top: 10px; padding-left: 10px;">Choose your tanzaku color</p>
                             <div style="padding-left: 10px; padding-bottom: 10px;">
-                                <input type="radio" name="color" id="tzk-red">
-                                <label for="tzk-red">Red</label><br>
-                                <input type="radio" name="color" id="tzk-blue">
-                                <label for="tzk-blue">Blue</label><br>
-                                <input type="radio" name="color" id="tzk-yellow">
-                                <label for="tzk-yellow">Yellow</label><br>
-                                <input type="radio" name="color" id="tzk-white">
-                                <label for="tzk-white">White</label><br>
-                                <input type="radio" name="color" id="tzk-purple">
-                                <label for="tzk-purple">Purple</label><br>
+                                <input type="radio" id="tzk-red" name="color">
+                                <label for="tzk-red" id="red">Red</label><br>
+                                <input type="radio" id="tzk-blue" name="color">
+                                <label for="tzk-blue" id="blue">Blue</label><br>
+                                <input type="radio" id="tzk-yellow" name="color">
+                                <label for="tzk-yellow" id="yellow">Yellow</label><br>
+                                <input type="radio" id="tzk-white" name="color">
+                                <label for="tzk-white" id="white">White</label><br>
+                                <input type="radio" id="tzk-purple" name="color">
+                                <label for="tzk-purple" id="purple">Purple</label><br>
                             </div>
                             
                         </div>
-                        <button>Submit</button>
+                        <button type="submit">Submit</button>
                     </form>
                 </div>
                 
@@ -64,5 +63,10 @@
                 <img src="assets/bamboo.jpeg">
             </div>
         </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="/js/jquery-3.5.1.min.js"></script>
+        <script src="/js/firebase.js"></script>
+        
     </body>
 </html>
