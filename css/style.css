@@ -20,6 +20,7 @@ body {
     font-family: 'FC rainbow', 'Nyashi', 'Hachi Maru Pop', 'Mali', cursive;
     text-align: center;
     background-color: #aca5d0;
+    color: #372791;
 }
 
 .background {
@@ -53,6 +54,8 @@ button {
     border: 0;
     outline: none;
     border-radius: 20px;
+    color: #372791;
+    background-color: wheat;
     cursor: pointer;
 }
 
@@ -64,7 +67,7 @@ button {
 
 .popup {
     width: 450px;
-    background-color: aquamarine;
+    background-color: #7cddf7;
     border-radius: 6px;
     top: 50%;
     left: 50%;
@@ -76,7 +79,7 @@ button {
 
 .popup button {
     width: 50%;
-    background-color: blueviolet;
+    background-color: #3773db;
     color: white;
 }
 
@@ -101,17 +104,37 @@ button {
     visibility: visible;
 }
 
+.card-holder {
+    display: flex;
+    justify-content: center;
+  }
+  
 .card {
     width: 250px;
     height: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     padding: 30px;
     visibility: hidden;
     background-color: white;
     cursor: pointer;
+}
+
+.card > .wwish {
+    text-align: center;
+    white-space: initial;
+  }
+.card > .wname {
+    position: fixed;
+    top: 480px;
+  
+    width: 280px;
+    text-align: center;
 }
 
 .card-open {
@@ -142,7 +165,7 @@ input[type=text] {
     height: 40px;
     width: 300px;
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #ff7e0d;
     padding: 0px 10px;
     margin-bottom: 10px;
     line-height: 2.5em!important;
@@ -158,7 +181,9 @@ input[type=text] {
 }
 
 .makewish button {
-    background-color: wheat;
+    margin-bottom: 30px;
+    background-color: #7e58d6;
+    color: white;
 }
 
 @media only screen and (max-width: 500px){
