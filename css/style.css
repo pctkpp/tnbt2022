@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: Nyashi;
-    src: url('/font/Nyashi.otf');
+    src: url('../../tnbt2022/font/Nyashi.otf');
 }
 @font-face {
     font-family: FC rainbow;
-    src: url('/font/FC\ Rainbow\ Regular\ [Non-commercial\ use].otf');
+    src: url('../../tnbt2022/font/FC\ Rainbow\ Regular\ [Non-commercial\ use].otf');
     unicode-range: U+E00–E7F;
 }
 
@@ -99,7 +99,7 @@ button {
 }
 
 input[type=text] {
-    font-family: 'FC rainbow', 'Nyashi', 'Hachi Maru Pop', 'Mali', cursive;
+    font-family: 'Hachi Maru Pop', 'Mali', cursive;
     font-size: 1em;
     height: 40px;
     width: 300px;
