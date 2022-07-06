@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=M+PLUS+Rounded+1c&family=Mali&display=swap');
+@import "{{ site.theme }}";
+@import "fonts";
+
 
 @font-face {
     font-family: Nyashi;
-    src: url('../tnbt2022/font Nyashi.otf');
+    src: url('../font/Nyashi.otf');
 }
 @font-face {
     font-family: FC rainbow;
-    src: url('../tnbt2022/font FC\ Rainbow\ Regular\ [Non-commercial\ use].otf');
+    src: url('../font/fc-rainbow.otf');
     unicode-range: U+E00–E7F;
 }
 
