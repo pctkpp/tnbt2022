@@ -132,7 +132,7 @@ button {
     width: 450px;
     background-color: #e8b7ed;
     border-radius: 6px;
-    padding: 10px 30px 30px;
+    padding: 10px;
     margin: auto;
 }
 
@@ -162,7 +162,10 @@ input[type=text] {
 }
 
 @media only screen and (max-width: 500px){
-    .popup, .makewish {
-        width: 400px;
+    .makewish {
+        width: 320px;
+    }
+    .popup {
+        width: 250px;
     }
 }
