@@ -13,10 +13,11 @@
         <div class="background">
             <img src="https://pctkpp.github.io/tnbt2022/assets/NBG.png" class="nbg">
             <div class="title">
-                <h1 style="color: white;">Tanabata</h1>
+                <h1>Tanabata</h1>
                 <h2>@KVIS - 7/7/2022</h2>
                 <p>May all your wishes come true</p>
             </div>
+
             <div>
                 <div style="margin: 15px; margin-bottom: 50px;">
                     <button onclick="openPopup()">What is tanabata?</button>
@@ -57,15 +58,21 @@
                 </div>
                 
             </div>
+
             <div class="bamboo">
                 <p>TAP to view a random wish</p>
-                <img src="https://pctkpp.github.io/tnbt2022/assets/bamboo.jpeg">
+                <img src="assets/bamboo.png" onclick="cardopen()">
             </div>
+            <div class="card" id="card" onclick="cardclose()">
+                <div class="wwish">This is the wish</div>
+                <div class="wname">Name</div>
+            </div>
+
         </div>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
         <script src="https://pctkpp.github.io/tnbt2022/js/jquery-3.5.1.min.js"></script>
-        <script src="https://pctkpp.github.io/tnbt2022/js/firebase.js"></script>
+        <script src="/js/firebase.js"></script>
         
     </body>
 </html>

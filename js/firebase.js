@@ -11,9 +11,10 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 let db = firebase.firestore();
 
-//
+//what is tanabata
 let popup = document.getElementById("popup");
 let ovl = document.getElementById("overlay");
+let tzk = document.getElementById("card");
 
 function openPopup() {
     popup.classList.add("open-popup");
@@ -24,8 +25,69 @@ function closePopup() {
     popup.classList.remove("open-popup");
     ovl.classList.remove("ovl");
 }
-//
 
+
+
+function cardclose() {
+    tzk.classList.remove("card-open");
+    ovl.classList.remove("ovl");
+}
+//
+let wishesId = [];
+let checkId = {};
+let data = {};
+let tone = {
+    red: "#fe6961",
+    white: "snow",
+    purple: "#cb99c9",
+    blue: "#aec6cf",
+    yellow: "#fdfd96",
+};
+
+function cardopen() {
+    
+    console.log(wishesId);
+    let i = Math.round(Math.random() * wishesId.length);
+    if (i >= wishesId.length) i = 0;
+    let id = wishesId[i];
+    if (id == undefined) {
+      alert("We are loading <3");
+    } else {
+        tzk.classList.add("card-open");
+        ovl.classList.add("ovl");
+          // console.log(data[id]);
+        $(".wname").text(data[id].name);
+        $(".wwish").text(data[id].wish);
+
+        $(".card").css("background-color", tone[data[id].color]);
+    }
+
+    
+}
+
+db.collection("wishes").onSnapshot((snap) => {
+    for (let i = 0; i < snap.docs.length; i++) {
+      let id = snap.docs[i].id;
+      if (id in checkId) {
+      } else {
+        checkId[id] = 1;
+        wishesId.push(id);
+        $(".wishes").text(wishesId.length + " wishes");
+        db.collection("wishes")
+          .doc(id)
+          .onSnapshot((doc) => {
+            // console.log(doc.data());
+            data[id] = {
+              color: doc.data().color,
+              wish: doc.data().wish,
+              name: doc.data().name,
+            };
+          });
+      }
+    }
+});
+
+//makewish
 document.getElementById("form").addEventListener("submit", submitForm);
 
 function submitForm(e){
@@ -45,7 +107,7 @@ function submitForm(e){
 
     let color = "";
 
-    for (var i=0; i < tzkcolor.length; i++) {
+    for (let i=0; i < tzkcolor.length; i++) {
         let col = tzkcolor[i];
         if ($(col).prop("checked")) {
             color = colname[i];
@@ -60,7 +122,7 @@ function submitForm(e){
         color: color,
     }).then(() => {
         alert("Success!");
-        console.log("Added");
+        //console.log("Added");
     });
 
 }
