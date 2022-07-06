@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=M+PLUS+Rounded+1c&display=swap');
+@font-face {
+    font-family: Nyashi;
+    src: url('/font/Nyashi.otf');
+}
+@font-face {
+    font-family: FC rainbow;
+    src: url('/font/FC\ Rainbow\ Regular\ [Non-commercial\ use].otf');
+    unicode-range: U+E00–E7F;
+}
+
+body {
+    font-family: 'FC rainbow', 'Nyashi', 'Hachi Maru Pop', cursive;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+}
+
+button {
+    font-family: 'FC rainbow', 'Nyashi', 'Hachi Maru Pop', cursive;
+    font-size: 1em;
+    height: 40px;
+    width: 270px;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.title {
+    margin-bottom: 50px;
+}
+
+.popup {
+    width: 450px;
+    background-color: aquamarine;
+    border-radius: 6px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    padding: 10px 30px 30px;
+    visibility: hidden;
+}
+
+.popup button {
+    width: 50%;
+    background-color: blueviolet;
+    color: white;
+}
+
+.open-popup {
+    visibility: visible;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 60%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+}
+
+.ovl {
+    visibility: visible;
+}
+
+.bamboo {
+    margin-top: 50px;
+}
+
+.bamboo img {
+    width: 80vw;
+    max-width: 700px;
+}
+
+.makewish {
+    width: 450px;
+    background-color: #e8b7ed;
+    border-radius: 6px;
+    padding: 10px 30px 30px;
+    margin: auto;
+}
+
+input[type=text] {
+    font-family: 'FC rainbow', 'Nyashi', 'Hachi Maru Pop', cursive;
+    font-size: 1em;
+    height: 40px;
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid red;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    line-height: 2.5em!important;
+}
+
+.tanzaku {
+    width: 320px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.makewish button {
+    background-color: wheat;
+}

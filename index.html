@@ -1,9 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>What</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KVIS Tanabata 2022</title>
+        
+        <!-- Custom css -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Custom js -->
+        <script src="js/script.js" defer></script>
     </head>
     <body>
-        <p>Hello</p>
+        <div class="background">
+            <div id="road">
+            </div>
+            <div class="title">
+                <h1>Tanabata</h1>
+                <h2>@KVIS - 7/7/2022</h2>
+                <p>May all your wishes come true</p>
+            </div>
+            <div>
+                <div style="margin: 15px; margin-bottom: 50px;">
+                    <button onclick="openPopup()">What is tanabata?</button>
+                    <div class="overlay" id="overlay"></div>
+                    <div class="popup" id="popup">
+                        <p>Tanabata (七夕, meaning "Evening of the seventh”), also known as Star Festival, is a Japanese festival to celebrates the meeting of the deities Orihime and Hikoboshi.</p>
+                        <button onclick="closePopup()">close</button>
+                    </div>
+                </div>
+
+                <div class="makewish">
+                    <form class="form" id="form">
+                        <h2>Make a wish</h2>
+                        <div>
+                            <input type="text" name="name" id="name" placeholder="Your name (Optional)">
+                        </div>
+                        <div>
+                            <input type="text" name="wish" id="wish" placeholder="Your wish">
+                        </div>
+                        <div class="tanzaku">
+                            <p style="margin-top: 0; margin-bottom: 10px; padding-top: 10px; padding-left: 10px;">Choose your tanzaku color</p>
+                            <div style="padding-left: 10px; padding-bottom: 10px;">
+                                <input type="radio" name="color" id="tzk-red">
+                                <label for="tzk-red">Red</label><br>
+                                <input type="radio" name="color" id="tzk-blue">
+                                <label for="tzk-blue">Blue</label><br>
+                                <input type="radio" name="color" id="tzk-yellow">
+                                <label for="tzk-yellow">Yellow</label><br>
+                                <input type="radio" name="color" id="tzk-white">
+                                <label for="tzk-white">White</label><br>
+                                <input type="radio" name="color" id="tzk-purple">
+                                <label for="tzk-purple">Purple</label><br>
+                            </div>
+                            
+                        </div>
+                        <button>Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+            <div class="bamboo">
+                <p>TAP to view a random wish</p>
+                <img src="assets/bamboo.jpeg">
+            </div>
+        </div>
     </body>
 </html>
