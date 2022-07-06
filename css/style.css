@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: Nyashi;
-    src: url('../font/Nyashi.otf');
+    src: url('https://pctkpp.github.io/tnbt2022/font/Nyashi.otf');
 }
 @font-face {
     font-family: FC rainbow;
-    src: url('../font/fc-rainbow.otf');
+    src: url('https://pctkpp.github.io/tnbt2022/font/fc-rainbow.otf');
     unicode-range: U+E00–E7F;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .background {
-    background-image: url('../assets/Background\ .PNG');
+    background-image: url('https://pctkpp.github.io/tnbt2022/assets/Background.PNG');
     background-size: 100vw;
     background-repeat: no-repeat;
 }
@@ -58,6 +58,12 @@ button {
 
 .title {
     margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 500px){
+    .popup, .makewish {
+        width: 400px;
+    }
 }
 
 .popup {
