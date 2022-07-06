@@ -23,7 +23,7 @@ body {
 }
 
 .background {
-    background-image: url('/assets/Background\ .PNG');
+    background-image: url('../assets/Background\ .PNG');
     background-size: 100vw;
     background-repeat: no-repeat;
 }
