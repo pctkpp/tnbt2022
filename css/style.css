@@ -58,12 +58,8 @@ button {
 
 .title {
     margin-bottom: 50px;
-}
-
-@media only screen and (max-width: 500px){
-    .popup, .makewish {
-        width: 400px;
-    }
+    color: white;
+    text-shadow: #FC0 0px 0 5px;
 }
 
 .popup {
@@ -145,4 +141,10 @@ input[type=text] {
 
 .makewish button {
     background-color: wheat;
+}
+
+@media only screen and (max-width: 500px){
+    .popup, .makewish {
+        width: 400px;
+    }
 }
